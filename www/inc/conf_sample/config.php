@@ -6,7 +6,7 @@
 // ##############################################################################
 // Minimal Configuration  #######################################################
 // ##############################################################################
-//api to use : domoticz | domogik | domotiga | openhab
+//api to use : domoticz | domogik | domotiga | openhab | tellstick
 $conf['app']['api']			="openhab";
 
 // Personalize the name of your Home
@@ -45,6 +45,10 @@ $conf['app']['groups_sensors_names']	="1";
 // When using actions, this is the default debounce period (in seconds) : It prevents the same action to be triggered multiple times, if the same action is called within this period.
 $conf['app']['actions_debounce']	="3";
 
+
+//	 Config  #####################################################################
+
+$conf['tdtool']['bin']			= '/usr/bin/tdtool';
 
 //	Urls  #####################################################################
 // Change these, if your domotic server is NOT on the same server than phpMyDomo, or if you are not using default server ports.
